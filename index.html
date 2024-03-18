@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.jpg">
+    <title>Decodificador</title>
+</head>
+<body> 
+    <main class="main">
+         <div class="card">
+            <h1>Decodificador</h1>
+              <label class="hdn-label" for="original">Palavra:</label>
+            <input type="text" id="original" placeholder="Digite aqui"><br>
+                <div class="botoes">
+                     <button class="btn" onclick="criptografar()"><img src="./img/cadeado.png" class="lock"
+                          alt="">Criptografar</button>
+                     <button class="btn" onclick="descriptografar()"><img src="./img/aberto.png" class="lock"
+                           alt="">Descriptografar</button>
+                     <button class="btn-top" onclick="apagarResultado()"><img class="img-trs" src="./img/lixo.png"
+                           alt=""></button><br>
+                     <button class="btn" id="position" onclick="copiar()">Copiar</button>
+                </div>
+        </div>
+        <div class="card-saida">
+            <h1>Resultado</h1>
+            <p id="resultado"></p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
